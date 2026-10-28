@@ -5,12 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>셀렉트마켓 · 이번 주 특가</title>
 <style>
-  body { margin: 0; font-family: sans-serif; color: #172033; background: #f5f7fb; }
-  header, main, footer { max-width: 640px; margin: 0 auto; padding: 24px 16px; }
-  h1 { font-size: 32px; margin: 8px 0; }
-  .card { background: #fff; border: 1px solid #dfe4ed; border-radius: 12px; padding: 16px; margin: 12px 0; }
-  .price { color: #2457f5; font-weight: 700; }
-  footer { color: #657086; font-size: 13px; }
+  :root {
+    --bg: #f3f3f1;
+    --panel: #ffffff;
+    --panel-alt: #f7f7f6;
+    --line: #d9d9d6;
+    --text: #111111;
+    --muted: #5b5b5a;
+    --accent: #1a1a1a;
+  }
+
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  header, main, footer {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin: 8px 0;
+    letter-spacing: -0.04em;
+  }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 16px;
+    margin: 12px 0;
+    box-shadow: 0 1px 0 rgba(17, 17, 17, 0.02);
+  }
+
+  .price {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  footer {
+    color: var(--muted);
+    font-size: 13px;
+  }
 </style>
 </head>
 <body>
